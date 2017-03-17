@@ -1,3 +1,4 @@
+
 #!usr/bin/env node
 
 'use strict'; 
@@ -16,8 +17,8 @@ console.log(
 
 
 books.getBooks(function(){
-  console.log("Getting book details...");
-  var booksURL= "https://www.googleapis.com/books/v1/volumes?q=" +arguments[0].title;
+  console.log("Searching for books...");
+  var booksURL= "https://www.googleapis.com/books/v1/volumes?q=" + arguments[0].title;
   books.printBookDetails(booksURL);
 });
 
